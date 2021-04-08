@@ -1,2 +1,5 @@
-FROM httpd
-COPY index.html /usr/local/apache2/htdocs/
+FROM centos
+RUN yum install httpd -y
+RUN  /usr/sbin/httpd
+COPY index.html /var/www/html/
+EXPOSE 80
