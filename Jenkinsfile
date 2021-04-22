@@ -1,4 +1,4 @@
-pieline{
+pipeline{
   stages{
     stage(test1){
       step{
